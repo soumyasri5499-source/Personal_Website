@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumya Srivastava - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VY0XTVQS1X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VY0XTVQS1X');
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #0f766e; /* teal-700 */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-slate-50 text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-slate-900">Soumya Srivastava</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Me</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#articles" class="nav-link">Articles</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-slate-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#home" class="block nav-link">Home</a>
+            <a href="#about" class="block nav-link">About Me</a>
+            <a href="#experience" class="block nav-link">Experience</a>
+            <a href="#projects" class="block nav-link">Projects</a>
+            <a href="#articles" class="block nav-link">Articles</a>
+            <a href="#contact" class="block nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+
+        <!-- Home Section -->
+        <section id="home" class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between py-12 md:py-20">
+            <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold text-teal-900 leading-none mb-4">
+                    <span class="text-lg text-slate-600 font-normal block">Hi, I'm</span>
+                    Soumya Srivastava
+                </h1>
+                <p class="text-lg text-slate-600 mb-6">
+                    I love to talk about the intersection of brands, operations, and human behavior.
+                </p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="https://www.linkedin.com/in/soumya-srivastava-a60662193" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-teal-700"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    <a href="https://medium.com/@soumyasrivastavaa" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-teal-700"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M5.122 6.985c0-1.522 1.234-2.756 2.756-2.756s2.756 1.234 2.756 2.756-1.234 2.756-2.756 2.756-2.756-1.234-2.756-2.756zm7.237.025c0-1.522 1.234-2.756 2.756-2.756s2.756 1.234 2.756 2.756-1.234 2.756-2.756 2.756-2.756-1.234-2.756-2.756zm6.265 0c0-1.522 1.234-2.756 2.756-2.756s2.756 1.234 2.756 2.756-1.234 2.756-2.756 2.756-2.756-1.234-2.756-2.756zM21.378 8.985c-.69 0-1.25.56-1.25 1.25v8.5c0 .69-.56 1.25-1.25 1.25h-14.75c-.69 0-1.25-.56-1.25-1.25v-8.5c0-.69-.56-1.25-1.25-1.25s-1.25.56-1.25 1.25v8.5c0 2.07 1.68 3.75 3.75 3.75h14.75c2.07 0 3.75-1.68 3.75-3.75v-8.5c0-.69-.56-1.25-1.25-1.25z"/></svg></a>
+                    <a href="mailto:soumyasri549@gmail.com" class="text-slate-500 hover:text-teal-700"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg></a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://i.postimg.cc/BQWfPTc1/temp-Imagex-Ru-Jj-T.avif" alt="Soumya Srivastava" class="rounded-lg shadow-2xl w-full max-w-sm md:max-w-md object-cover bg-slate-200">
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                    <div class="md:w-1/3 w-full">
+                        <img src="https://i.postimg.cc/tCyVftSG/IMG-6553.avif" alt="Soumya Srivastava" class="rounded-lg shadow-xl w-full h-full object-cover bg-slate-200">
+                    </div>
+                    <div class="md:w-2/3 w-full">
+                        <h2 class="text-3xl font-bold text-teal-800 mb-6">About Me</h2>
+                        <div class="space-y-4 text-slate-600 leading-relaxed">
+                            <p>I'm an MBA student at BITS School of Management, currently exploring the intersection of brand strategy and operations. My background is in hospitality management with ITC Hotels, where I spent three years leading teams in a fast-paced, high-stakes environment. It was a grounding experience that taught me how to build systems and manage pressure.</p>
+                            <p>Now, I'm channeling that experience into understanding what makes brands resonate with people. I often write about my observations on Medium, digging into the small details that shape how we live and work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-teal-800 mb-12">Work Experience</h2>
+                <div class="max-w-4xl mx-auto space-y-12">
+                    <!-- Experience 1 -->
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2 shadow-sm flex-shrink-0">
+                            <img src="https://i.ibb.co/twNxSqPV/image.png" alt="ITC Hotels Logo" class="w-full h-auto object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Rooms Division Manager, ITC Rajputana</h3>
+                            <p class="text-sm text-slate-500 mb-3">March 2023 – June 2024 • Jaipur, India</p>
+                            <p class="text-slate-600 mb-2">Led end-to-end guest experience and hotel operations by managing a 90-member team across Front Office, Housekeeping, and Guest Relations. Drove operational excellence and brand compliance through rigorous quality control and strategic cost management — improving service delivery, enhancing profitability, and boosting guest satisfaction. Recognized with the 'ACE' Award for exceptional management.</p>
+                            <p class="text-slate-800 font-semibold">Focus Areas: <span class="font-normal text-slate-600">Guest Experience Management • Hotel Operations • Quality & Brand Compliance • Team Leadership & Development</span></p>
+                        </div>
+                    </div>
+                    <!-- Experience 2 -->
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2 shadow-sm flex-shrink-0">
+                            <img src="https://i.ibb.co/twNxSqPV/image.png" alt="ITC Hotels Logo" class="w-full h-auto object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Management Trainee, ITC Hotels</h3>
+                            <p class="text-sm text-slate-500 mb-3">August 2021 – February 2023 • Multiple Locations, India</p>
+                            <p class="text-slate-600 mb-2">Gained comprehensive operational experience by rotating through multiple functions at iconic properties like ITC Grand Central (Mumbai) and ITC Kohenur (Hyderabad). Contributed to the pre-opening teams for four new hotels, assisting with the setup of operational frameworks. Drove business development by executing targeted sales strategies and developed training modules that successfully upskilled the operational workforce.</p>
+                            <p class="text-slate-800 font-semibold">Focus Areas: <span class="font-normal text-slate-600">Hotel Pre-Opening Operations • Business Development • Cross-Functional Training • Sales Strategy</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-teal-800 mb-12">Recent Projects & Internships</h2>
+                <div class="max-w-4xl mx-auto space-y-12">
+                    <!-- Project 1 -->
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2 shadow-sm flex-shrink-0">
+                            <img src="https://i.ibb.co/VcXRRj19/image.png" alt="WUA Logo" class="w-full h-auto object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Multi-Channel Marketing & Campaign Management, WUA</h3>
+                            <p class="text-sm text-slate-500 mb-3">June 2025 – Present</p>
+                            <p class="text-slate-600 mb-2">Directed WUA’s social media and digital marketing operations across LinkedIn, Instagram, and brand blogs, ensuring consistent brand presence and measurable results. Managed 60+ posts/month, launched campaigns generating 1.8M+ impressions, and reduced content turnaround time by 25% through streamlined workflows.</p>
+                            <p class="text-slate-800 font-semibold">Focus Areas: <span class="font-normal text-slate-600">Social Media Strategy · Digital Marketing · Campaign Management</span></p>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2 shadow-sm flex-shrink-0">
+                            <img src="https://i.ibb.co/20RS0LXh/image.png" alt="The Shri Ram Academy Logo" class="w-full h-auto object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Operations & Strategy Intern, The Shri Ram Academy</h3>
+                            <p class="text-sm text-slate-500 mb-3">April 2025 – June 2025 · Hyderabad, Telangana</p>
+                            <p class="text-slate-600 mb-2">Redesigned procurement processes for SAP S/4HANA rollout and led cost-benefit analysis of Microsoft 365 usage. Implemented role-based data governance, identified ₹9 lakh in annual savings, cut procurement cycle time by 28%, and reduced vendor onboarding by 40%.</p>
+                            <p class="text-slate-800 font-semibold">Focus Areas: <span class="font-normal text-slate-600">Process Digitization · Cost Optimization · SAP Governance</span></p>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2 shadow-sm flex-shrink-0">
+                            <img src="https://i.ibb.co/PsN6Rdy3/image.png" alt="ITC Rajputana Logo" class="w-full h-auto object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Efficiency Enhancement, ITC Rajputana</h3>
+                            <p class="text-sm text-slate-500 mb-3">March 2023 – June 2023 · Jaipur, Rajasthan</p>
+                            <p class="text-slate-600 mb-2">Successfully achieved a 40% reduction in TAT of room check-outs through analysis and optimization of time and motion processes. Introduced credit-based task assignments, boosting team productivity by 35%.</p>
+                            <p class="text-slate-800 font-semibold">Focus Areas: <span class="font-normal text-slate-600">Process Optimization · Time & Motion Study · Productivity Improvement</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Articles Section -->
+        <section id="articles" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-teal-800 mb-12">Latest Articles</h2>
+                <div id="medium-articles" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <p class="text-slate-500 text-center col-span-full">Loading articles...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-teal-800 mb-4">Get In Touch</h2>
+                <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">I'm always open to new opportunities and conversations. If you have a project in mind, a question, or just want to say hi, feel free to reach out!</p>
+                <div class="max-w-xl mx-auto">
+                    <!-- Netlify Form -->
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Your Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-teal-500 focus:border-teal-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Your Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-teal-500 focus:border-teal-500">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-sm font-medium text-slate-700 mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-teal-500 focus:border-teal-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-slate-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-teal-500 focus:border-teal-500"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-teal-600 text-white font-bold py-3 px-8 rounded-full hover:bg-teal-700 transition-colors duration-300 text-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-200 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Soumya Srivastava. All Rights Reserved.</p>
+            <p class="mt-2 text-sm text-slate-400"><a href="mailto:soumyasri549@gmail.com" class="hover:text-white">soumyasri549@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+                // For mobile menu
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Medium Articles
+        document.addEventListener('DOMContentLoaded', function() {
+            const mediumFeedUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@soumyasrivastavaa';
+            const articlesContainer = document.getElementById('medium-articles');
+            fetch(mediumFeedUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.items || data.items.length === 0) {
+                        articlesContainer.innerHTML = '<p class="text-slate-500 text-center col-span-full">No articles found.</p>';
+                        return;
+                    }
+                    articlesContainer.innerHTML = '';
+                    const articles = data.items.slice(0, 6); // Fetch 6 articles
+                    articles.forEach(article => {
+                         // Create a temporary div to parse the content
+                        const tempDiv = document.createElement('div');
+                        tempDiv.innerHTML = article.content;
+
+                        // Extract title 
+                        const title = article.title;
+
+                        // Extract subtitle (usually the first h4 on Medium)
+                        const subtitleElement = tempDiv.querySelector('h4');
+                        const subtitle = subtitleElement ? subtitleElement.textContent.trim() : '';
+                        
+                        const articleCard = `
+                            <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="medium-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col group">
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors">${title}</h3>
+                                    <p class="text-slate-500">${subtitle}</p>
+                                </div>
+                            </a>
+                        `;
+                        articlesContainer.innerHTML += articleCard;
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching Medium articles:', error);
+                    articlesContainer.innerHTML = '<p class="text-red-500 text-center col-span-full">Could not load articles.</p>';
+                });
+        });
+    </script>
+</body>
+</html>
